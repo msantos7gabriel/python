@@ -1,8 +1,8 @@
 import math
 angulo = float(input('Escreva o Angulo: '))
-seno = math.sin(angulo)
-cosseno = math.cos(angulo)
-tangente = math.tan(angulo)
+seno = math.sin(math.radians(angulo))
+cosseno = math.cos(math.radians(angulo))
+tangente = math.tan(math.radians(angulo))
 
-print('O Angulo: {} tem seu Seno de: {}, Seu Cosseno de: {}, e Sua Tangente {}'.format(
+print('O Angulo: {}\n tem seu Seno de: {:.2f},\n Seu Cosseno de: {:.2f},\n e Sua Tangente: {:.2f}'.format(
     angulo, seno, cosseno, tangente))
