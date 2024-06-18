@@ -1,6 +1,10 @@
-import datetime as dt
+nota1 = float(input('Escreva a sua primeira nota: '))
+nota2 = float(input('Escreva a sua segunda nota: '))
+m = (nota1+nota2)/2
 
-data_hj = dt.date.today()
-data_hj = dt.strptime(data_hj, "%d/%m/%Y")
-nascimento = input('Escreva sua data de nascimento: ')
-nascimento = dt.strptime(nascimento, "%d/%m/%Y")
+if m < 5:
+    print('REPROVADO')
+elif m >= 5 and m <= 6.9:
+    print('RECUPERAÇÃO')
+elif m >= 7:
+    print('APROVADO')
