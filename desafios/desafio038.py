@@ -1,6 +1,3 @@
-from traceback import print_tb
-
-
 n1 = float(input('Escreva um numero: '))
 n2 = float(input('Escreva um numero: '))
 
