@@ -8,8 +8,12 @@ for i in range(0, len(frase)):
     else:
         palíndromo = False
         break
+for i in range(0, len(frase)):
+    contador = len(frase) - 1 - i
+    frase_nova.append(frase[contador])
+frase_nova = "".join(frase_nova)
 
 if palíndromo == True:
-    print('A frase é um palíndromo')
+    print('{} é um palíndromo de {}' .format(frase_nova,frase))
 else:
-    print('A frase não é um palíndromo')
+    print('{} NÃO é um palíndromo de {}' .format(frase_nova,frase))
