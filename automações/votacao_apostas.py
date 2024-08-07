@@ -4,8 +4,8 @@ from time import sleep
 
 qtd_votos = (int(input("Quantos votos deseja fazer?: ")))
 
+pg.hotkey("alt", "tab")
 sleep(3)
-
 
 def votar():
     sleep(4)
