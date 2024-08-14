@@ -7,4 +7,4 @@ while num != 999:
     num1 += num
     n += 1
 
-print("Foram digitados {} e a Soma entre eles é: {}".format(n, num1 - 999))
+print("Foram digitados {} e a Soma entre eles é: {}".format(n-1, num1 - 999))

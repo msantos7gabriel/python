@@ -1,5 +1,4 @@
 flag = ''
-num = 0
 media = 0
 n = 0
 maior = 0
