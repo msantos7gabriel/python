@@ -1,5 +1,6 @@
 sexo = ''
-while sexo != 'S' and sexo != 'M':
+while sexo != 'F' and sexo != 'M':
     sexo = str(input("Qual seu sexo [M/F]: ")).upper()
-    if sexo != 'S' and sexo != 'M':
+    if sexo != 'F' and sexo != 'M':
         print('\nPor Favor insira corretamente\n')
+print("Sexo {} Registrado".format(sexo))

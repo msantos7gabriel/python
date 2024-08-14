@@ -22,7 +22,5 @@ while flag != 'N':
             break
 
 media = media / n
-print('A media entre todos os valores foi: {:.2f}'.format(media))
+print('Foi digitado {} Números\nA media entre todos os valores foi: {:.2f}'.format(n, media))
 print('O Menor numero foi: {} e o Maior foi: {}'.format(menor, maior))
-
-
