@@ -9,11 +9,11 @@ print(hora_atual.tm_hour)
 
 def verificar_hr():
     if hora_atual.tm_hour < 12:
-        return "Bom dia Grupo!"
+        return "Bom dia Grupo!, que hj seja um dia maravilhoso para todos!"
     elif hora_atual.tm_hour < 18:
-        return "Boa tarde Grupo!"
+        return "Boa tarde Grupo De Deus!"
     else:
-        return "Boa noite Grupo!"
+        return "Boa noite Grupo!, Que voces durmam com os anjos!"
 
 
 def mandar_mensagem():
@@ -39,6 +39,7 @@ def mandar_mensagem():
     pg.click()
     tm.sleep(2)
     pg.hotkey("enter")
+    tm.sleep(5)
     pg.hotkey("ctrl", "w")
 
 
