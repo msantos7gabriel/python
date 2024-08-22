@@ -16,6 +16,15 @@ def verificar_hr():
         return "Boa noite Grupo!, Que voces durmam com os anjos!"
 
 
+def verificar_hr_gif():
+    if hora_atual.tm_hour < 12:
+        return "Bom dia"
+    elif hora_atual.tm_hour < 18:
+        return "Boa tarde"
+    else:
+        return "Boa noite"
+
+
 def mandar_mensagem():
     tm.sleep(15)
     pg.moveTo(420, 180, duration=1)
@@ -28,6 +37,11 @@ def mandar_mensagem():
     mensagem = str(verificar_hr())
     pg.write(mensagem, interval=0.1)
     pg.hotkey("enter")
+    mandar_gif()
+
+
+def mandar_gif():
+    mensagem = verificar_hr_gif()
     pg.moveTo(740, 1000, duration=1)
     pg.click()
     pg.moveTo(830, 1000, duration=1)
