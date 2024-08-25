@@ -26,7 +26,7 @@ def verificar_hr_gif():
 
 
 def mandar_mensagem():
-    tm.sleep(15)
+    tm.sleep(20)
     pg.moveTo(420, 180, duration=1)
     pg.click()
     pg.write("Os Mano", interval=0.1)
