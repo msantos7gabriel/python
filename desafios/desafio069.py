@@ -6,16 +6,16 @@ while True:
     print('-'*30)
     idade = int(input('Idade: '))
     while True:
-        sexo = str(input('Sexo: [M/F]: ')).upper()
-        if sexo == 'M' or sexo == 'F':
+        sexo = str(input('Sexo: [M/F]: ')).strip().upper()[0]
+        if sexo in 'MF':
             break
         print('Escreva um valor valido!')
     pessoas_sexo.append(sexo)
     pessoas_idade.append(idade)
     print('-'*30)
     while True:
-        continuar = str(input('Deseja continuar? [S/N]: ')).upper()
-        if continuar == 'S' or continuar == 'N':
+        continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
+        if continuar in 'SN':
             break
         print('Escreva um valor valido!')
     if continuar == 'N':

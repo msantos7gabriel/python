@@ -11,8 +11,8 @@ while True:
             break
         print('Escreva um valor entre 0 e 10 (não sei se vc sabe mas vc tem apenas 10 dedos na mão)\n')
     while True:
-        impar_ou_par = str(input('Par Ou Ímpar ? [P/I] ')).upper()
-        if impar_ou_par == 'P' or impar_ou_par == 'I':
+        impar_ou_par = str(input('Par Ou Ímpar ? [P/I] ')).strip().upper()[0]
+        if impar_ou_par in 'PI':
             break
         print('Escreva um valor valido!')
     print('=-'*15)

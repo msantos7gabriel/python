@@ -9,8 +9,9 @@ while True:
     produto_nome.append(nome)
     produto_preco.append(preco)
     while True:
-        continuar = str(input('\nDeseja continuar? [S/N]: ')).upper()
-        if continuar == 'S' or continuar == 'N':
+        continuar = str(
+            input('\nDeseja continuar? [S/N]: ')).strip().upper()[0]
+        if continuar in 'SN':
             break
         print('Escreva um valor valido!')
     print('-'*30)
