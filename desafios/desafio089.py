@@ -1,5 +1,4 @@
 boletin = []
-escolha = 0
 
 while True:
     nome = str(input('\nNome: ').strip().capitalize())
