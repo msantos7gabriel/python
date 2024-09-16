@@ -23,13 +23,12 @@ print('-'*30)
 
 while True:
     escolha = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
+    print('-'*30)
     if escolha == 999:
+        print('Finalizando...')
         break
     elif escolha >= len(boletin):
         print(f'Não há aluno n°{escolha}')
-        print('-'*30)
     else:
         print(f'As notas de {boletin[escolha][0]} são {boletin[escolha][1]}')
-        print('-'*30)
-print('Finalizando...')
 print('<<< VOLTE SEMPRE >>>')
