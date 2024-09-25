@@ -14,6 +14,5 @@ else:
         ((pessoa['contratação'] - date.today().year)+35)+pessoa['idade'])
 print('-='*30)
 
-
 for k, v in pessoa.items():
     print(f'{k}: {v}')
