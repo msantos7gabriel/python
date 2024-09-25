@@ -27,9 +27,11 @@ for g in grupo:
 media = round(soma / len(grupo), 2)
 print(f'- A média de idade é de {media} anos.')
 print('- As Mulheres cadastradas foram: ', end=' ')
+
 for g in grupo:
     if g['sexo'] == 'F':
         print(g['nome'], end=' ')
+
 print()
 print('- Lista das pessoas que estão em cima da média: ')
 
@@ -37,4 +39,5 @@ for g in grupo:
     if g['idade'] > media:
         print()
         print(f'nome = {g['nome']}; sexo = {g['sexo']}; idade = {g['idade']}')
+
 print('<<< ENCERRADO >>>')
