@@ -1,4 +1,4 @@
-print('Controle de Terrenos')
+print(f'{'Controle de Terrenos':^30}')
 print('-'*30)
 
 

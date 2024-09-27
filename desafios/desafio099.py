@@ -5,7 +5,7 @@ def maior(*num):
     print('-='*30)
     print('Analisando os valores passados...')
     for n in num:
-        print(n, end=' ')
+        print(n, end=' ', flush=True)
         sleep(0.5)
     print(f'Foram informados {len(num)} valores ao todo.')
     if len(num) == 0:

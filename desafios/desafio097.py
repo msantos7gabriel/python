@@ -1,8 +1,8 @@
 def escreva(str):
-    tam = len(str)
-    print(f'{'~' * (tam+4)}')
+    tam = len(str)+4
+    print('~' * tam)
     print(f'  {str}  ')
-    print(f'{'~' * (tam+4)}')
+    print('~' * tam)
 
 
 escreva('teste')
