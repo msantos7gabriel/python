@@ -17,11 +17,11 @@ def notas(*notas, sit=False):
     if sit == True:
         if aluno['media'] >= 7:
             aluno['situação'] = 'BOA'
-        elif 6 <= aluno['media'] < 7:
+        elif 5 <= aluno['media'] < 7:
             aluno['situação'] = 'RAZOÁVEL'
         else:
             aluno['situação'] = 'RUIM'
-    return aluno.copy()
+    return aluno
 
 
 resp = notas(5.5, 9.5, 10, 6.5, sit=True)
