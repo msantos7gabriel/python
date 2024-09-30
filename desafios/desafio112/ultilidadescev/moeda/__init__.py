@@ -28,4 +28,3 @@ def resumo(n, aum, red):
     print(f'{f'{aum}% de aumento:':^20}{aumentar(n, aum)}')
     print(f'{f'{red}% de redução:':^20}{reduzir(n, red)}')
     print('-'*30)
-# no lugar do ':^20' dava pra usar uma tabulação antes das chaves da chamada da função '\t'
